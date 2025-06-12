@@ -1,11 +1,13 @@
 name: Build
-on:
-  push:
-    branches:
-      - test
-  pull_request:
-    branches:
-      - test
+# on:
+#   push:
+#     branches:
+#       - test
+#   pull_request:
+#     branches:
+#       - test
+
+on: [push, pull_request]
 
 jobs:
   build_on_linux:
