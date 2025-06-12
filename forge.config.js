@@ -24,6 +24,17 @@ module.exports = {
       config: {},
     },
   ],
+  publishers: [
+    {
+      "name": "@electron-forge/publisher-github",
+      "config": {
+        "repository": {
+          "owner": "liyin398720",
+          "name": "electron-publish-test"
+        }
+      }
+    }
+  ],
   plugins: [
     {
       name: '@electron-forge/plugin-auto-unpack-natives',
